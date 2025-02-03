@@ -26,11 +26,12 @@ Make sure all dependencies have been installed before moving on:
 
 ## Getting Started
 
-Start by creating the project using Composer and configuring the `.env` file:
+Start by clonning the project and composer install and configuring the `.env` file:
 
 ```sh
 git clone https://github.com/sandeep0108/filament-starter.git
 cd filament-starter
+composer install
 cp .env.example .env
 ```
 
