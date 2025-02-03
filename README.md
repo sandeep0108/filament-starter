@@ -29,8 +29,9 @@ Make sure all dependencies have been installed before moving on:
 Start by creating the project using Composer and configuring the `.env` file:
 
 ```sh
-composer create-project log1x/filament-starter:dev-main
+git clone https://github.com/sandeep0108/filament-starter.git
 cd filament-starter
+cp .env.example .env
 ```
 
 After `.env` is configured, you can proceed to migrate & seed the database:
