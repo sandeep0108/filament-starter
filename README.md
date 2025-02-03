@@ -48,14 +48,6 @@ Username: admin
 Password: admin
 ```
 
-### Build Assets
-
-The project assets are compiled using Vite. This can be done by installing the dependencies and running the build command with Yarn.
-
-```sh
-yarn install
-yarn build
-```
 
 ## Plugins Used
 
@@ -71,12 +63,8 @@ The following [Filament plugins](https://filamentphp.com/plugins) come fully imp
 | [Peek](https://github.com/pboivin/filament-peek)                    | Quick & efficient front-end previews of resources. | [pboivin](https://github.com/pboivin)           |
 | [Logger](https://github.com/z3d0x/filament-logger)                  | Zero-config resource activity logging.             | [z3d0x](https://github.com/z3d0x)               |
 
-## Bug Reports
-
-If you discover a bug in Filament Starter, please [open an issue](https://github.com/log1x/filament-starter/issues).
 
 ## Contributing
-
 Contributing whether it be through PRs, reporting an issue, or suggesting an idea is encouraged and appreciated.
 
 ## License
