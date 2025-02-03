@@ -24,7 +24,9 @@ use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Jeffgreco13\FilamentBreezy\BreezyCore;
+use Joaopaulolndev\FilamentGeneralSettings\FilamentGeneralSettingsPlugin;
 use Pboivin\FilamentPeek\FilamentPeekPlugin;
+use TomatoPHP\FilamentAlerts\FilamentAlertsPlugin;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -39,6 +41,14 @@ class AdminPanelProvider extends PanelProvider
             ->spa()
             ->databaseNotifications()
             ->plugins([
+                FilamentAlertsPlugin::make(),
+                FilamentGeneralSettingsPlugin::make()
+                ->canAccess(fn() => auth()->user()->id === 1)
+                ->setSort(3)
+                ->setIcon('heroicon-o-cog')
+                ->setNavigationGroup('Settings')
+                ->setTitle('General Settings')
+                ->setNavigationLabel('General Settings'),
                 BreezyCore::make()
                     ->myProfile(
                         shouldRegisterUserMenu: true,

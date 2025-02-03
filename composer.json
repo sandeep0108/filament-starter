@@ -14,10 +14,12 @@
     "awcodes/filament-gravatar": "^2.0",
     "bezhansalleh/filament-exceptions": "^2.0",
     "croustibat/filament-jobs-monitor": "^2.1",
+    "designthebox/barcode-field": "^0.0.6",
     "diglactic/laravel-breadcrumbs": "^8.1",
     "filament/filament": "^3.1",
     "guzzlehttp/guzzle": "^7.2",
     "jeffgreco13/filament-breezy": "v2.2.1.1",
+    "joaopaulolndev/filament-general-settings": "^1.0",
     "laravel/framework": "^10.10",
     "laravel/sanctum": "^3.3",
     "laravel/tinker": "^2.8",
@@ -25,6 +27,7 @@
     "pboivin/filament-peek": "^2.2",
     "romanzipp/laravel-seo": "^2.6",
     "sinnbeck/markdom": "^2.0",
+    "tomatophp/filament-alerts": "^2.2",
     "z3d0x/filament-logger": "^0.6.2"
   },
   "require-dev": {

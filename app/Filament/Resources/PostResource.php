@@ -6,6 +6,7 @@ use App\Filament\Resources\PostResource\Pages;
 use App\Models\Post;
 use Awcodes\Curator\Components\Forms\CuratorPicker;
 use Awcodes\Curator\Components\Tables\CuratorColumn;
+use DesignTheBox\BarcodeField\Forms\Components\BarcodeInput;
 use Filament\Forms;
 use Filament\Forms\Components\Builder;
 use Filament\Forms\Form;
@@ -15,6 +16,7 @@ use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
+use Spatie\SchemaOrg\Barcode;
 
 class PostResource extends Resource
 {
@@ -57,10 +59,13 @@ class PostResource extends Resource
     public static function form(Form $form): Form
     {
         return $form
-            ->schema([
+            ->schema([              
                 Forms\Components\Grid::make()
                     ->columns(3)
                     ->schema([
+                        BarcodeInput::make('barcode')
+                        ->icon('heroicon-o-arrow-right') // Specify your Heroicon name here                        
+                        ->required(),
                         Forms\Components\Section::make()
                             ->columnSpan(2)
                             ->schema([
